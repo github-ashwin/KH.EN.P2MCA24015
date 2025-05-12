@@ -17,7 +17,7 @@ URLS = {
 def get(request,type):
     global window_state
 
-    prev_window = window_state.copy
+    prev_window = window_state.copy()
 
     if type not in URLS:
         return JsonResponse({'error': "Invalid type"})
@@ -38,6 +38,13 @@ def get(request,type):
                     window_state.pop(0)
         
         avg = round(sum(window_state) / len(window_state), 2) if window_state else 0.0
+
+        return JsonResponse({
+            "windowPrevState": prev_window,
+            "windowCurrState": window_state,
+            "numbers": fetched_numbers,
+            "avg": avg
+        })
     
     except requests.exceptions.RequestException:
         return JsonResponse({"error": "Timeout"})
