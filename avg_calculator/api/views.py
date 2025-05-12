@@ -23,8 +23,8 @@ def get(request,type):
         return JsonResponse({'error': "Invalid type"})
     
     try:
-        header = {'Authorization':f"Bearer{settings.access_token}"}
-        response = requests.get(URLS[type], headers=header, timeout=0.5)
+        headers = {'Authorization':f"Bearer {settings.ACCESS_TOKEN}"}
+        response = requests.get(URLS[type], headers=headers, timeout=0.5)
 
         if response.status_code != 200:
             return JsonResponse({"error": "Fail"})
