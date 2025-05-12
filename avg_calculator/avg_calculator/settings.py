@@ -121,3 +121,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+clientID = "cd0ea40b-fa1a-4981-b452-c9170bd19e91"
+clientSecret = "eYDMQjjjaXSYtmyN"
+
+access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3MDU1MDg0LCJpYXQiOjE3NDcwNTQ3ODQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImNkMGVhNDBiLWZhMWEtNDk4MS1iNDUyLWM5MTcwYmQxOWU5MSIsInN1YiI6Im15c2VsZmFzaHdpbmtAZ21haWwuY29tIn0sImVtYWlsIjoibXlzZWxmYXNod2lua0BnbWFpbC5jb20iLCJuYW1lIjoiYXNod2luIHYga3VtYXIiLCJyb2xsTm8iOiJraC5lbi5wMm1jYTI0MDE1IiwiYWNjZXNzQ29kZSI6IlN3dXVLRSIsImNsaWVudElEIjoiY2QwZWE0MGItZmExYS00OTgxLWI0NTItYzkxNzBiZDE5ZTkxIiwiY2xpZW50U2VjcmV0IjoiZVlETVFqamphWFNZdG15TiJ9.MrSqPrtc2JU4ZjYPwk0kkOA6RYYqA2SVtfLt--3xamY"
